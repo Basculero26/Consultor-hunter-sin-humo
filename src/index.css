@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@layer base {
+  .prose h1 {
+    @apply text-xl font-bold mb-4 text-stone-900;
+  }
+  .prose h2 {
+    @apply text-lg font-semibold mb-2 text-stone-800;
+  }
+  .prose p {
+    @apply mb-4 leading-relaxed;
+  }
+  .prose strong {
+    @apply font-bold text-stone-900;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #D6D3D1;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #A8A29E;
+}
